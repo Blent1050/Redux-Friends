@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 import Friends from './Friends';
 import FriendForm from './FriendForm';
 import { getFriends } from '../actions';
@@ -20,7 +18,7 @@ class App extends Component {
         {this.props.error ? <h3>Error Fetching Friends</h3> : null}
         <div className="Flex-Container">
           {this.props.gettingFriends ? (
-            <img src={logo} className="App-logo" alt="logo" />
+            <img src={'logo'} className="App-logo" alt="logo" />
           ) : (
             <Friends friends={this.props.friends} />
           )}
